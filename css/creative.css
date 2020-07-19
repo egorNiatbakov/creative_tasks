@@ -1,0 +1,222 @@
+/* Селекторы */
+
+@font-face {
+    font-family: "RuslanDisplay";
+    src: url(../fonts/RuslanDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: "Ranchers";
+    src: url(../fonts/Ranchers-Regular.ttf);
+}
+
+
+body {
+  background: linear-gradient(45deg, #e9e16e, #fffef9);
+}
+
+
+html, body, header {
+  height: 100%;
+  overflow:  hidden;
+}
+
+
+
+
+
+.main-top {
+  display: flex;
+  background: linear-gradient(60deg, #444444, #d6d6d6);
+  height: 150px;
+  width: 100%;
+
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+.main-left {
+  display: flex;
+  background: linear-gradient(160deg, #444444, #d4d4d4);
+  width: 350px;
+  height: 100%;
+}
+
+
+
+.main-top__panel-top {
+  margin: 5%;
+}
+
+
+.main-left__panel-left {
+  margin-right: 5%;
+}
+
+
+
+.main__list-top {
+  display: inline;
+  margin: 10px 5px 10px;
+}
+
+
+
+.main__list-left {
+  display: flex;
+  margin-top: 50px;
+}
+
+
+
+.main__link-top {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background: rgba(114, 0, 0, 0.1);
+  padding: 7px 40px;
+
+
+  text-decoration: none;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.main__link-top:hover {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background: rgba(241, 237, 237, 0.8);
+  padding: 7px 40px;
+
+  text-decoration: none;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.main__link-left {
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: rgba(114, 0, 0, 0.6);
+  padding: 10px 70px;
+
+  text-decoration: none;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.main__link-left:hover {
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px 70px;
+
+  text-decoration: none;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.checkboxjs .cb1
+{
+  display: flex;
+  position: fixed;
+}
+
+.checkbox
+{
+  position: absolute;
+  left: 1%; 
+  top: 1%;
+  z-index: 1;
+  opacity: 0;
+  height: 110px;
+  width: 125px;
+  cursor: pointer;
+}
+
+
+.checkbox + span {
+  position: absolute;
+  left: 1%; 
+  top: 1%;
+  height: 110px;
+  width: 125px;
+  background: url(../img/wrapoff.png) no-repeat;
+  cursor: pointer;
+}
+
+.checkbox:checked + span ~ .main-left{
+  display: none;
+}
+
+
+.checkbox:checked + span{
+  height: 110px;
+  width: 125px;
+  background: url(../img/wrapon.png) no-repeat;
+}
+
+
+
+.check-panel
+{
+
+  display: inline;
+  position: absolute;
+  left: 30%; 
+  top: 30%;
+}
+
+.people 
+{
+  display: flex;
+  align-self: flex-start;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .main-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px) {
+
+  .main-top__panel-top {
+    display: none;
+    /* padding: 0px; */
+    /* margin: 10px; */
+    /* overflow: hidden; */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

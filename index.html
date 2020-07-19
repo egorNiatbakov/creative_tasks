@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/creative.css">
+
+    <title>Task from Creative</title>
+    
+
+</head>
+
+
+<body>
+<header>
+
+
+        <input type="checkbox" class="checkbox">
+        <span></span> <!-- Кнопка для закрытия/открытия левого меню. Находится в шапке. -->
+
+
+
+
+        <div class="check-panel">
+            <label> Выбрать все:</label> <!-- Чекбокс активирует все чек боксы применяя их действия -->
+            <input type="checkbox" class="rootCheck" onchange='rootCheck("rootCheck", "checkboxjs");'><br><br>
+            
+            <label> Убрать кнопки слева:</label>
+            <input type="checkbox" class="checkboxjs cb1" onchange='showOrHide("cb1", "main-left__panel-left");'><br><br>
+            
+            <label> Убрать кнопки сверху:</label>
+            <input type="checkbox" class="checkboxjs cb2" onchange='showOrHide("cb2", "main-top__panel-top");'><br><br>
+            
+            <label> Убрать людей в шапке:</label>
+            <input type="checkbox" class="checkboxjs cb3" onchange='showOrHide("cb3", "people");'><br><br>
+        </div>
+
+    
+        
+        <div class="main-top"> <!-- Родитель для контейнера под кнопки в верхнем меню -->
+            <img src="/img/people.png" alt="people" class="people">
+            
+            
+            <ul class="main-top__panel-top"> <!-- Контейнер для кнопок верхнего меню -->
+                <li class="main__list-top">
+                    <a class="main__link-top" href="#">google</a>
+                </li>
+                <li class="main__list-top">
+                    <a class="main__link-top" href="#" >yandex</a>
+                </li>    
+            </ul>
+
+        </div>
+
+
+
+
+        <div class="main-left"> <!-- Родитель для контейнера под кнопки в левом меню -->
+            
+            <ul class="main-left__panel-left"> <!-- Контейнер для кнопок левого меню -->
+
+                <li class="main__list-left">
+                    <a class="main__link-left" href="#">General</a>
+                </li>
+                <li class="main__list-left">
+                    <a class="main__link-left" href="#">Involved</a>
+                </li>
+                <li class="main__list-left">
+                    <a class="main__link-left" href="#">Forums</a>
+                </li>
+                <li class="main__list-left">
+                    <a class="main__link-left" href="#">Services</a>
+                </li>
+                <li class="main__list-left">
+                    <a class="main__link-left" href="#" >About Us</a>
+                </li>
+            </ul>
+        </div>
+
+</header>
+
+
+<script src="js/creative.js"></script>
+</body>
+</html>
